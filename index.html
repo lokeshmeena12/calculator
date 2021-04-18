@@ -1,5 +1,26 @@
 <html>
 <head><title>calculator</title>
+	 <script>
+       
+         function dis(val)
+         {
+             document.get("result").value+=val
+         }
+           
+      
+         function solve()
+         {
+             let x = document.get("result").value
+             let y = eval(x)
+             document.get("result").value = y
+         }
+           
+         
+         function clr()
+         {
+             document.get("result").value = ""
+         }
+      </script>
 	
 	
 	<style>
