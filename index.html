@@ -1,28 +1,27 @@
 <html>
-<head><title>calculator</title>
-	 <script>
-       
-         function dis(val)
-         {
-             document.get("result").value+=val
-         }
-           
-      
-         function solve()
-         {
-             let x = document.get("result").value
-             let y = eval(x)
-             document.get("result").value = y
-         }
-           
-         
-         function clr()
-         {
-             document.get("result").value = ""
-         }
-      </script>
+<head>
+	<script>
+		
+		function dis(val)
+		{
+			document.getElementById("result").value+=val
+		}
+		
 	
-	
+		function solve()
+		{
+			let x = document.getElementById("result").value
+			let y = eval(x)
+			document.getElementById("result").value = y
+		}
+		
+
+		function clr()
+		{
+			document.getElementById("result").value = ""
+		}
+	</script>
+	<!-- for styling -->
 	<style>
 		.title{
 		margin-bottom: 10px;
@@ -50,7 +49,7 @@
 </head>
 <!-- create table -->
 <body>
-	<div class = title >Calculator</div>
+	<div class = title >GeeksforGeeks Calculator</div>
 	<table border="1">
 		<tr>
 			<td colspan="3"><input type="text" id="result"/></td>
